@@ -16,7 +16,7 @@ export default function Home() {
     verticalAlign: "middle",
   } as any);
 
-  function onTextareaChange(e) {
+  function onTextareaChange(e: React.ChangeEvent<HTMLTextAreaElement>) {
     setTextareaContent(e.target.value);
   }
 
@@ -65,10 +65,10 @@ export default function Home() {
   return (
     <>
       <div id="maincontent" style={{ marginTop: 70 }}>
-        <h2>"Every Author as First Author" Web API.</h2>
+        <h2>&quot;Every Author as First Author&quot; Web API.</h2>
         <h3>What is this?</h3>
         <a href="https://browse.arxiv.org/pdf/2304.01393.pdf">
-          "Every Author as First Author"
+          &quot;Every Author as First Author&quot;
         </a>{" "}
         is a humorous talk/paper by{" "}
         <img
@@ -87,7 +87,7 @@ export default function Home() {
           every-author-as-first-author (EAAFA) images that you can embed into
           web pages.
         </p>
-        <h3>Show, don't tell</h3>
+        <h3>Show, don&apos;t tell</h3>
         <div className="container">
           <div className="box">
             <p style={{ margin: 0 }}>enter some author names:</p>
@@ -129,12 +129,12 @@ export default function Home() {
           Then, include this URL in an <span className="mono">&lt;img&gt;</span>{" "}
           tag. I strongly recommend adding a{" "}
           <span className="mono">
-            style="height:20px; width: 100px; vertical-align: middle"
+            style=&quot;height:20px; width: 100px; vertical-align: middle&quot;
           </span>{" "}
           attribute to the <span className="mono">&lt;img&gt;</span> tag to make
-          sure the image is sized correctly and doesn't mess up your page
+          sure the image is sized correctly and doesn&apos;t mess up your page
           layout. The width value (100px above) will depend on the longest
-          author name. It's roughly{" "}
+          author name. It&apos;s roughly{" "}
           <span className="mono">8 * (longest name length)</span>.
         </p>
         <p>
@@ -146,12 +146,12 @@ export default function Home() {
         <h3>Who / Huh</h3>
         <p>
           I am entirely not affiliated with the authors of the original
-          (amazing) talk & paper. I'd love to be their friends but I'm probably
-          not cool enough.
+          (amazing) talk & paper. I&apos;d love to be their friends but I&apos;m
+          probably not cool enough.
         </p>
         <p>
           This was made during my time at the{" "}
-          <a href="https://www.recurse.com/">Recurse Center</a>. I've made{" "}
+          <a href="https://www.recurse.com/">Recurse Center</a>. I&apos;ve made{" "}
           <a href="https://recurse.greg.technology">other things</a> there too.
         </p>
       </div>
