@@ -73,7 +73,7 @@ export default function Home() {
         is a humorous talk/paper by{" "}
         <img
           src="/authors?Erik%20D.%20Demaine,Martin%20L.%20Demaine"
-          style={{ height: 20, width: 100, verticalAlign: "middle" }}
+          style={{ height: 20, width: 125, verticalAlign: "middle" }}
           title="Erik D. Demaine, Martin L. Demaine"
         />{" "}
         describing a
