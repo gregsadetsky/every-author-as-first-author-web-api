@@ -13,7 +13,10 @@ export default function handler(
     /authors?Erik%20D.%20Demaine+Martin%20L.%20Demaine
     split into both names (separated by +) and urldecode the names
   */
+  console.log("req", req);
+  console.log("req.url", req.url);
   const queryString = req?.url?.match(/^\/authors\?(.+)$/)?.[1];
+  console.log("queryString", queryString);
   if (!queryString) {
     res.status(400);
     res.json({ message: "Missing query string" });
