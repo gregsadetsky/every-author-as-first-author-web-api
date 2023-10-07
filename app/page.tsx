@@ -6,7 +6,7 @@ import { saveAs } from "file-saver";
 
 export default function Home() {
   const [textareaContent, setTextareaContent] = useState(
-    "Andrew Turner\nCaden Wilkinson",
+    "Kylie Moore\nGabriel Watkins",
   );
   const debouncedTextareaContent = useDebounce<string>(textareaContent, 500);
   const [imgSrc, setImgSrc] = useState(generateUrl());
@@ -40,7 +40,7 @@ export default function Home() {
 
     setImgStyle({
       height: 20,
-      width: longestNameLength * 9,
+      width: longestNameLength * 8,
       verticalAlign: "middle",
     });
   }, [debouncedTextareaContent]);
@@ -133,7 +133,7 @@ export default function Home() {
           layout. The width value (100px above) will depend on the longest
           author name (and how wide the name is i.e. if it contains a lot of
           &quot;m&quot;s...) It&apos;s roughly{" "}
-          <span className="mono">9 * (longest name length)</span>. You can
+          <span className="mono">8 * (longest name length)</span>. You can
           always adjust.
         </p>
         <p>
@@ -145,7 +145,7 @@ export default function Home() {
         <h3>Who / Huh</h3>
         <p>
           I am entirely not affiliated with the authors of the original
-          (amazing) talk & paper. I&apos;d love to be their friends but I&apos;m
+          (amazing) talk & paper. I&apos;d love to be their friend but I&apos;m
           probably not cool / smart enough.
         </p>
         <p>

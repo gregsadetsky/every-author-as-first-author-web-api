@@ -1,24 +1,21 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-type ResponseData = {
-  message: string;
-};
-
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<ResponseData>,
-) {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const queryStringKeys = Object.keys(req.query);
 
-  if (!queryStringKeys || !queryStringKeys.length) {
+  if (!queryStringKeys || queryStringKeys.length !== 1) {
     res.status(400);
-    res.json({ message: "Missing query string" });
+    res.write(
+      "wrong query string. please check documentation on https://eaafa.greg.technology/",
+    );
+    res.end();
     return;
   }
 
-  const names = queryStringKeys[0]
-    .split(",")
-    .map((name) => decodeURIComponent(name).trim());
+  let names = queryStringKeys[0].split(",").map((name) => name.trim());
+
+  // sanitize..?
+  names = names.map((name) => name.replace(/[<>]/g, ""));
 
   res.status(200);
   res.setHeader("Content-Type", "image/svg+xml");
