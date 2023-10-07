@@ -9,6 +9,6 @@
 ```bash
 # first time
 npm install
-# all the time
+# every time
 npm run dev
 ```
