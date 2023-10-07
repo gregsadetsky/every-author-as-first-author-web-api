@@ -146,7 +146,7 @@ export default function Home() {
         <p>
           I am entirely not affiliated with the authors of the original
           (amazing) talk & paper. I&apos;d love to be their friend but I&apos;m
-          probably not cool / smart enough.
+          not sure they'd want that (it's ok).
         </p>
         <p>
           This was made while I was at{" "}
