@@ -40,7 +40,7 @@ export default function Home() {
 
     setImgStyle({
       height: 20,
-      width: longestNameLength * 8,
+      width: longestNameLength * 9,
       verticalAlign: "middle",
     });
   }, [debouncedTextareaContent]);
@@ -116,12 +116,12 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <h3>How do I do that?</h3>
+        <h3>What if I want to do that?</h3>
         <p>Generate a URL that follows this structure:</p>
         <pre>
           https://eaafa.greg.technology/authors/?john%20smith,jane%20johnson
         </pre>
-        <p>i.e. url encode author names, and separate them using a comma</p>
+        <p>i.e. url encode author names, and separate them using commas</p>
         <p>
           Then, include this URL in an <span className="mono">&lt;img&gt;</span>{" "}
           tag. I strongly recommend adding a{" "}
@@ -131,8 +131,10 @@ export default function Home() {
           attribute to the <span className="mono">&lt;img&gt;</span> tag to make
           sure the image is sized correctly and doesn&apos;t mess up your page
           layout. The width value (100px above) will depend on the longest
-          author name. It&apos;s roughly{" "}
-          <span className="mono">8 * (longest name length)</span>.
+          author name (and how wide the name is i.e. if it contains a lot of
+          &quot;m&quot;s...) It&apos;s roughly{" "}
+          <span className="mono">9 * (longest name length)</span>. You can
+          always adjust.
         </p>
         <p>
           You might also want to add a <span className="mono">title</span>{" "}
@@ -144,7 +146,7 @@ export default function Home() {
         <p>
           I am entirely not affiliated with the authors of the original
           (amazing) talk & paper. I&apos;d love to be their friends but I&apos;m
-          probably not cool enough.
+          probably not cool / smart enough.
         </p>
         <p>
           This was made during my time at the{" "}

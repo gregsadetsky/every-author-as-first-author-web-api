@@ -26,7 +26,7 @@ export default function handler(
     `
     <svg xmlns="http://www.w3.org/2000/svg">
      <title>${names.join(", ")}</title>
-      ${names.map((name) => `<text x="0" y="15">${name}</text>`).join("")}
+      ${names.map((name) => `<text x="0" y="14">${name}</text>`).join("")}
     </svg>
   `.trim(),
   );
