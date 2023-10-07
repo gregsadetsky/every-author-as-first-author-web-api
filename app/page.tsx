@@ -24,7 +24,7 @@ export default function Home() {
     const encodedNames = textareaContent
       .split("\n")
       .map((name) => encodeURIComponent(name))
-      .join("+");
+      .join(",");
     return `/authors?${encodedNames}`;
   }
 
@@ -72,7 +72,7 @@ export default function Home() {
         </a>{" "}
         is a humorous talk/paper by{" "}
         <img
-          src="/authors?Erik%20D.%20Demaine+Martin%20L.%20Demaine"
+          src="/authors?Erik%20D.%20Demaine,Martin%20L.%20Demaine"
           style={{ height: 20, width: 100, verticalAlign: "middle" }}
           title="Erik D. Demaine, Martin L. Demaine"
         />{" "}
@@ -119,12 +119,9 @@ export default function Home() {
         <h3>How do I do that?</h3>
         <p>Generate a URL that follows this structure:</p>
         <pre>
-          https://eaafa.greg.technology/authors/?john%20smith+jane%20johnson
+          https://eaafa.greg.technology/authors/?john%20smith,jane%20johnson
         </pre>
-        <p>
-          i.e. use url encoding characters within author names, and + to
-          separate authors.
-        </p>
+        <p>i.e. url encode author names, and separate them using a comma</p>
         <p>
           Then, include this URL in an <span className="mono">&lt;img&gt;</span>{" "}
           tag. I strongly recommend adding a{" "}
