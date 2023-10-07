@@ -149,9 +149,13 @@ export default function Home() {
           probably not cool / smart enough.
         </p>
         <p>
-          This was made during my time at the{" "}
-          <a href="https://www.recurse.com/">Recurse Center</a>. I&apos;ve made{" "}
-          <a href="https://recurse.greg.technology">other things</a> there too.
+          This was made while I was at{" "}
+          <a href="https://www.recurse.com/">Recurse Center</a>. View the{" "}
+          <a href="https://github.com/gregsadetsky/every-author-as-first-author-web-api">
+            source code
+          </a>
+          . I&apos;ve made{" "}
+          <a href="https://recurse.greg.technology">other things</a> too.
         </p>
       </div>
     </>
