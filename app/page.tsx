@@ -119,7 +119,7 @@ export default function Home() {
         <h3>What if I want to do that?</h3>
         <p>Generate a URL that follows this structure:</p>
         <pre>
-          https://eaafa.greg.technology/authors/?john%20smith,jane%20johnson
+          https://eaafa.greg.technology/authors?john%20smith,jane%20johnson
         </pre>
         <p>i.e. url encode author names, and separate them using commas</p>
         <p>
