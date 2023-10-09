@@ -21,10 +21,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader("Content-Type", "image/svg+xml");
   res.write(
     `
-    <svg xmlns="http://www.w3.org/2000/svg">
-     <title>${names.join(", ")}</title>
-      ${names.map((name) => `<text x="0" y="14">${name}</text>`).join("")}
-    </svg>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <title>${names.join(", ")}</title>
+  ${names.map((name) => `<text x="0" y="14">${name}</text>`).join("")}
+</svg>
   `.trim(),
   );
   res.end();
